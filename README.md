@@ -102,16 +102,48 @@ Q(t+1)=T′Q(t)+TQ(t)′
 ⇒Q(t+1)=T⊕Q(t)
 
 ### Procedure
-/* write all the steps invloved */
-
+1. Create a New Project:
+Open Quartus and create a new project by selecting "File" > "New Project Wizard." Follow the
+wizard's instructions to set up your project, including specifying the project name, location, and
+target device (FPGA). 2. Create a New Design File:
+Once the project is created, right-click on the project name in the Project Navigator and select "Add
+New File." Choose "Verilog HDL File" or "VHDL File," depending on your chosen hardware
+description language. 3. Write the Combinational Logic Code:
+Open the newly created Verilog or VHDL file and write the code for your combinational logic. 4.
+Compile the Project: To compile the project, click on "Processing" > "Start Compilation" in the
+menu. Quartus will analyze your code, synthesize it into a netlist, and perform optimizations based
+on your target FPGA device. 5. Analyze and Fix Errors:
+If there are any errors or warnings during the compilation process, Quartus will display them in the
+Messages window. Review and fix any issues in your code if necessary. View the RTL diagram.
+6. Verification:
+Click on "File" > "New" > "Verification/Debugging Files" > "University Program VWF". Once
+Waveform is created Right Click on the Input/Output Panel > " Insert Node or Bus" > Click on Node
+Finder > Click On "List" > Select All. Give the Input Combinations according to the Truth Table and
+then simulate the Output Waveform.
 
 
 ### PROGRAM 
 /*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: T. Gayathri 
+RegisterNumber:  212223100007
 */
+## D flipflop 
+
+![Exp5 dfp code](https://github.com/gayumee/Experiment--05-Implementation-of-flipflops-using-verilog/assets/149037327/7da4a55e-f29e-4f36-a53c-c86d84d91c23)
+
+## JK flipflop
+
+![Exp5 jkfp code](https://github.com/gayumee/Experiment--05-Implementation-of-flipflops-using-verilog/assets/149037327/4b716c04-6fbb-496c-bf4c-c50c9e71004f)
+
+## SR flipflop
+
+![Exp5 srfp code](https://github.com/gayumee/Experiment--05-Implementation-of-flipflops-using-verilog/assets/149037327/33f059cf-b5e0-4506-81a0-779be82143c4)
+
+## T flipflop 
+
+![Exp5 tfp code](https://github.com/gayumee/Experiment--05-Implementation-of-flipflops-using-verilog/assets/149037327/60f7557e-30d9-4092-81bc-d5244b51aeb1)
+
 
 
 
@@ -120,16 +152,33 @@ RegisterNumber:
 
 ### RTL LOGIC FOR FLIPFLOPS 
 
+## D flipflop
+![Exp5 dfp RTL diagram](https://github.com/gayumee/Experiment--05-Implementation-of-flipflops-using-verilog/assets/149037327/ed6f9787-fdec-4783-acf1-c325ae8600da)
 
+## T flipflop 
+![Exp5 tfp RTL diagram](https://github.com/gayumee/Experiment--05-Implementation-of-flipflops-using-verilog/assets/149037327/bd90277d-14ff-40f3-b2e8-15ea5c0f3299)
 
+## JK flipflop 
+![Exp5 jkfp RTL diagram](https://github.com/gayumee/Experiment--05-Implementation-of-flipflops-using-verilog/assets/149037327/1e775c7e-90ba-4e0e-9f1b-f004f96fba5f)
 
-
-
+## SR flipflop 
+![Exp5 srfp RTL diagram](https://github.com/gayumee/Experiment--05-Implementation-of-flipflops-using-verilog/assets/149037327/27d5786c-85c8-4340-9e9f-6bd7ca5bdcce)
 
 
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
 
+## D flipflop
+![d wave](https://github.com/gayumee/Experiment--05-Implementation-of-flipflops-using-verilog/assets/149037327/e09032fe-3b23-4a8b-982a-f3d7359d7aed)
+
+## T flipflop 
+![t wave](https://github.com/gayumee/Experiment--05-Implementation-of-flipflops-using-verilog/assets/149037327/921a59f4-ec41-49d6-a7e5-54bfaad2159e)
+
+## JK flipflop 
+![jk wave](https://github.com/gayumee/Experiment--05-Implementation-of-flipflops-using-verilog/assets/149037327/3ca365f4-881f-498a-a305-ff911444eece)
+
+## SR flipflop 
+![sr wave](https://github.com/gayumee/Experiment--05-Implementation-of-flipflops-using-verilog/assets/149037327/9a7f63d8-1a0b-4025-932e-dac759453824)
 
 
 
@@ -137,4 +186,7 @@ RegisterNumber:
 
 
 
-### RESULTS 
+
+
+### RESULTS
+Thus the implementation of  all the flipflops using verilog and validating their functionality using their functional tables is done.
